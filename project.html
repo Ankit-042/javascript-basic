@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webdev dom manipulation</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body class="container">
+    <input type="button" id="button" value="grey" class="grey">
+    <input type="button" id="button" value="blue" class="blue">
+    <input type="button" id="button" value="green" class="green">
+    <input type="button" id="button" value="red" class="red">
+    <script>
+        const body=document.body
+        // console.log(body)
+        const button=document.querySelectorAll('#button');
+        // console.log(button);
+        button.forEach(function(button){ 
+            button.addEventListener('click',function(e){
+                console.log(e)
+                if(e.target.value === 'grey'){
+                      body.style.backgroundColor=e.target.value
+                }
+                else if (e.target.value==='red') {
+                      body.style.backgroundColor=e.target.value}
+                else if (e.target.value==='blue') {
+                      body.style.backgroundColor=e.target.value
+                    
+                }
+                else if (e.target.value==='green') {
+                      body.style.backgroundColor=e.target.value
+                }
+        })
+        })
+    </script>
+</body>
+</hbutto
